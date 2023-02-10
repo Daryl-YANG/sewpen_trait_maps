@@ -84,15 +84,17 @@ for (itr in 1:n.itr)
       pft.trait.sample <- pft.trait.all[, target.trait]
       pft.trait.mean <- mean(pft.trait.sample, na.rm = TRUE)
     }
+    # if there is no data for the PFT, then assign its trait value as NA to remove it
+    # from the calculation
     if(nrow(pft.trait.all) == 0)
     {
       pft.trait.mean <- NA
     }
     veg.comp[, which(colnames(veg.comp) == pft)] <- veg.comp[, which(colnames(veg.comp) == pft)] * pft.trait.mean
   }
-  
+  # calculate the mean of current iteration
   trait.mean <- apply(veg.comp, 1, sum, na.rm = TRUE)
-  
+  # store current iteration result into dataframe
   trait.mean.itr <- cbind(trait.mean.itr, trait.mean)
 }
 
@@ -100,19 +102,19 @@ for (itr in 1:n.itr)
 trait.pix.mean <- apply(trait.mean.itr, 1, FUN = mean, na.rm = TRUE)
 trait.pix.sd <- apply(trait.mean.itr, 1, FUN = sd, na.rm = TRUE)
 
+# convert mean trait dataframe back to a raster
 trait.pix.mean <- cbind(veg.comp.df[, c(1,2)], trait.pix.mean)
 trait.mean.map <- rasterFromXYZ(trait.pix.mean)
 crs(trait.mean.map) <- crs(veg.comp.rst)
-
+# convert trait standard deviation dataframe back to a raster
 trait.pix.sd <- cbind(veg.comp.df[, c(1,2)], trait.pix.sd)
 trait.sd.map <- rasterFromXYZ(trait.pix.sd)
 crs(trait.sd.map) <- crs(veg.comp.rst)
 
-
+# save trait map
 outname <- paste0(out.dir, '/', 'kougarok_trait_cnr_area_ave_5m.tif')
 writeRaster(trait.mean.map, outname, format = 'GTiff', overwrite = TRUE)
-
-
+# save trait uncertainty map
 outname <- paste0(out.dir, '/', 'kougarok_trait_cnr_area_unc_5m.tif')
 writeRaster(trait.sd.map, outname, format = 'GTiff', overwrite = TRUE)
 #*****************************************************************************************#
