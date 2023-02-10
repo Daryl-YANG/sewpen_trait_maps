@@ -1,0 +1,39 @@
+USDA_Plants_Symbol,Species,Common_Name,PFT,acryoname
+ALVI5,Alnus viridis,green alder,deciduous tall shrub - alder,DTSA
+AMNO7,Anthoxanthum monticola,alpina sweetgrass,dry graminoid,DG
+ARALA7,Arctostaphylos alpina,alpine bearberry,deciduous dwarf shrub,DDS
+ARLA2,Arctagrostis latifolia,wideleaf polargrass,dry graminoid,DG
+ARRU6,Arctous rubra,red fruit bearberry,deciduous dwarf shrub,DDS
+BEGL,Betula glandulosa,resin birch,deciduous low shrub,DLS
+BENA,Betula nana,dwarf birch,deciduous low shrub,DLS
+BEPU4,Betula pumila,bog birch,deciduous low shrub,DLS
+CAAQ,Carex aquatilis,water sedge,wet graminiod,WG
+CABI5,Carex bigelowii,Bigelow's sedge,dry graminoid,DG
+CLADI3,Cladina,reindeer lichen,lichen,LI
+DAPRF,Dasiphora frudicosa,shrubby cinquefoil,deciduous low shrub,DLS
+DOFR,Dodecatheon frigidum,western arctic shootingstar,forb,FO
+DROCA2,Dryas octopetala ssp. alaskensis ,Alaskan mountain-avens,evergreen shrub,ES
+DUFI,Dupontia fisheri,Fisher's tundragrass,dry graminoid,DG
+EMNI,Empetrum nigrum,black crowberry,evergreen shrub,ES
+EQAR,Equisetum arvense,field horsetail,forb,FO
+ERAN6,Eriophorum angustifolium,tall cottongrass,wet graminiod,WG
+ERVA4,Eriophorum vaginatum,tussock cottongrass,dry graminoid,DG
+HIERA,Hieracium,hawkweed,forb,FO
+KAPR,Kalmia procumbens,alpine azalea,evergreen shrub,ES
+LEDUM,Ledum,Labrador tea,evergreen shrub,ES
+lichen,N/A,dark fruticose lichen,lichen,LI
+PEFR5,Petasites frigidus,arctic sweet coltsfoot,forb,FO
+POAR2,Poa arctica,arctic bluegrass,dry graminoid,DG
+POBIP,Polygonum bistorta,meadow bistort,forb,FO
+RUCH,Rubus chamaemorus,cloudberry,forb,FO
+RUSA9,Rubus saxatilis,stone bramble,forb,FO
+SAAL,Salix alaxensis,feltleaf willow,deciduous tall shrub - willow,DTSW
+SAGL,Salix glauca,grayleaf willow,deciduous tall shrub - willow,DTSW
+SALAC2,Salix calcicola,wooly willow,diciduous dwarf shrub,DDS
+SAPH,Salix phlebophylla,skeletonleaf willow,diciduous dwarf shrub,DDS
+SAPU15,Salix pulchra,tealeaf willow,deciduous tall shrub - willow,DTSW
+SARE2,Salix reticulata,netleaf willow,diciduous dwarf shrub,DDS
+SARI4,Salix richardsonii,Richardson's willow,deciduous tall shrub - willow,DTSW
+SPHAG2,Sphagnum,sphagnum (or peat moss),moss,MO
+VAUL,Vaccinium uliginosum,bog blueberry,deciduous low shrub,DLS
+VAVI,Vaccinium vitis-idaea,lingonberry,evergreen shrub,ES
